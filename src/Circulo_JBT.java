@@ -7,6 +7,9 @@ public class Circulo_JBT extends FiguraGeometrica_JBT {
 	public Circulo_JBT(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio < 0) {
+			Math.abs(radio);
+		}
 	}
 
 	@Override
